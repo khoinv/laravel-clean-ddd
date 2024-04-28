@@ -14,7 +14,7 @@ use Src\Blog\Domain\ValueObject\PostSlug;
 use Src\Blog\Domain\ValueObject\PostTitle;
 use Throwable;
 
-readonly class CreatePostHandler
+readonly class CreatePostCommandHandler
 {
     public function __construct(
         private PostQueryInterfaceRepository $queryRepository,

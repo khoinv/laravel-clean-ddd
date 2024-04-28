@@ -9,7 +9,7 @@ use Src\Blog\Application\Repository\PostWriteInterfaceRepository;
 use Src\Blog\Domain\ValueObject\CommentContent;
 use Throwable;
 
-readonly class UpdateCommentHandler
+readonly class UpdateCommentCommandHandler
 {
     public function __construct(
         private PostQueryInterfaceRepository $queryRepository,

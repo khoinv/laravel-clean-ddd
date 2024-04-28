@@ -12,7 +12,7 @@ use Src\Blog\Domain\ValueObject\PostSlug;
 use Src\Blog\Domain\ValueObject\PostTitle;
 use Throwable;
 
-readonly class UpdatePostHandler
+readonly class UpdatePostCommandHandler
 {
     public function __construct(
         private PostQueryInterfaceRepository $queryRepository,

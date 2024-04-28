@@ -11,7 +11,7 @@ use Src\Blog\Domain\ValueObject\CommentContent;
 use Src\Blog\Domain\ValueObject\CommentId;
 use Throwable;
 
-readonly class CreateCommentHandler
+readonly class CreateCommentCommandHandler
 {
     public function __construct(
         private PostQueryInterfaceRepository $queryRepository,
