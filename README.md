@@ -1,4 +1,9 @@
 ## Laravel Clean Architecture and DDD example
+This project is a simple demo applying the following technologies with Laravel
++ Clean Architecture
++ Domain Driven Design
++ Command Bus
++ CQRS
 
 ## Projects structures
 ```sh
