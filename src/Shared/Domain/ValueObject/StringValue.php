@@ -3,7 +3,7 @@
 namespace Src\Shared\Domain\ValueObject;
 
 use Src\Shared\Exception\ExceptionUtil;
-use Src\Shared\Exception\ValueObject\ValueToLongException;
+use Src\Shared\Exception\ValueObject\StringToLongException;
 use Throwable;
 
 class StringValue
@@ -14,7 +14,7 @@ class StringValue
      */
     public function __construct(private ?string $value, private readonly ?int $limit = 1000)
     {
-        ExceptionUtil::throw_if(is_string($this->value) && is_int($limit) && strlen($this->value) > $limit, new ValueToLongException(limit: $limit));
+        ExceptionUtil::throw_if(is_string($this->value) && is_int($limit) && strlen($this->value) > $limit, new StringToLongException(limit: $limit));
     }
 
     public function getValue(): ?string

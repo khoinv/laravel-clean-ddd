@@ -4,7 +4,7 @@ namespace Src\Shared\Exception\ValueObject;
 
 use Src\Shared\Exception\DomainException;
 
-class ValueOverMinException extends DomainException
+class NumberOverMinException extends DomainException
 {
     public function __construct(public $message = "Over min value", public $min = 1000)
     {

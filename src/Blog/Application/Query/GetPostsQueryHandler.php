@@ -2,6 +2,7 @@
 
 namespace Src\Blog\Application\Query;
 
+use Src\Blog\Application\Payload\GetPostsPayload;
 use Src\Blog\Domain\Aggregate\PostAggregate;
 use Src\Blog\Infrastructure\Repository\Mysql\PostQueryRepository;
 
@@ -14,7 +15,7 @@ readonly class GetPostsQueryHandler
     /**
      * @return PostAggregate[]
      */
-    public function handle(): array
+    public function handle(GetPostsPayload $payload): array
     {
         return $this->postRepository->get();
     }

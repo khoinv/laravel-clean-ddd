@@ -4,7 +4,7 @@ namespace Src\Shared\Exception\ValueObject;
 
 use Src\Shared\Exception\DomainException;
 
-class ValueToLongException extends DomainException
+class StringToLongException extends DomainException
 {
     public function __construct(public $message = "To long", public $limit = 1000)
     {
